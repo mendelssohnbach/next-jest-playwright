@@ -26,4 +26,6 @@ module.exports = {
   },
   transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  collectCoverage: true,
+  collectCoverageFrom: ['__test__/**/*.{js,jsx}', '__test__/**/*.{ts,tsx}'],
 };
